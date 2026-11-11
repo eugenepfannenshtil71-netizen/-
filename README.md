@@ -4,17 +4,28 @@ ATTACKER - 172.22.249.108
 
 ## Задание 1
 
-![png]()
+![png](https://github.com/eugenepfannenshtil71-netizen/-/blob/main/Задание%2011.jpg)
 
-Задание 11
-12
-13
+![png](https://github.com/eugenepfannenshtil71-netizen/-/blob/main/задание%2012.jpg)
+
+![png](https://github.com/eugenepfannenshtil71-netizen/-/blob/main/задание%2013.jpg)
+
 
 -sV (определение версий) и -sT (полный TCP-connect) «шумные» — реально открывают соединения, их Suricata ловит лучше всего.
 -sS (SYN/полуоткрытое) и -sA (ACK) тише: -sA вообще не завершает соединение, по нему детекта может почти не быть.
 Fail2Ban на сканирование портов не реагирует — он анализирует неудачные авторизации (лог SSH), а не факт сканирования. Это ключевая разница между Suricata и Fail2Ban.
 
 ## Задание 2
+
+![png](https://github.com/eugenepfannenshtil71-netizen/-/blob/main/задание%2021.jpg)
+
+![png](https://github.com/eugenepfannenshtil71-netizen/-/blob/main/задание%2022.jpg)
+
+![png](https://github.com/eugenepfannenshtil71-netizen/-/blob/main/23.jpg)
+
+![png](https://github.com/eugenepfannenshtil71-netizen/-/blob/main/24.jpg)
+
+![png](https://github.com/eugenepfannenshtil71-netizen/-/blob/main/23.jpg)
 
 После maxretry (3) неудачных попыток Fail2Ban банит IP на bantime через правило в iptables/nftables.
 Suricata во время брутфорса фиксирует шквал подключений к 22 порту — видно и объём, и источник.
